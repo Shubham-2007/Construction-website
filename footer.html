@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .upper {
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            width: fit-content;
+            justify-content: end;
+            align-items: flex-end;
+            /* border: 1px solid white; */
+        }
+
+        .upper .lower {
+            position: relative;
+            list-style: none;
+            width: 30px;
+            height: 30px;
+            margin: 0px 20px;
+            transform: rotate(-30deg) skew(25deg);
+        }
+
+        .upper .lower span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            transition: 0.5s;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 15px !important;
+        }
+
+        .upper .lower:hover span:nth-child(5) {
+            transform: translate(20px, -20px);
+            opacity: 1;
+        }
+
+        .upper .lower:hover span:nth-child(4) {
+            transform: translate(15px, -15px);
+            opacity: 0.8;
+        }
+
+        .upper .lower:hover span:nth-child(3) {
+            transform: translate(10px, -10px);
+            opacity: 0.6;
+        }
+
+        .upper .lower:hover span:nth-child(2) {
+            transform: translate(5px, -5px);
+            opacity: 0.4;
+        }
+
+        .upper .lower:hover span:nth-child(1) {
+            transform: translate(0px, -0px);
+            opacity: 0.2;
+        }
+
+        .upper .lower:nth-child(1) span {
+            background: #dd4b39;
+        }
+
+        .upper .lower:nth-child(2) span {
+            background: #3b5999;
+        }
+
+        .upper .lower:nth-child(3) span {
+            background: #e4405f;
+        }
+
+        .upper .lower:nth-child(4) span {
+            background: #0077B5;
+        }
+
+        .upper .lower:nth-child(5) span {
+            background: #F1502F;
+        }
+
+        .upper .lower:nth-child(6) span {
+
+            background: #55acee;
+        }
+
+        footer {
+            background-color: #434f53;
+            height: 50px;
+            width: 100%;
+            color: #888888;
+            margin: 0px;
+            background-size: cover;
+            margin: auto;
+            display: table;
+            position: relative;
+        }
+
+        .div {
+            display: table-cell;
+        }
+
+        .text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 50px;
+            font-family: 'Montserrat', sans-serif;
+            padding: 0.7% 0 0 10% ;
+            margin: 0px;
+            font-size: 18px;
+        }
+        .social{
+            width: 40%;
+            height: 50px;
+            padding-top: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="text div">
+<p>&copy; Shubham(18dcs046) | Rajnil(18dcs050)</p>
+        </div>
+        <div class="social div">
+
+            <ul class="upper">
+                <li class="lower">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-google" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="lower"
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-facebook" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="lower">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-instagram" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="lower">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-linkedin" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="lower">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-twitter" aria-hidden="true"></span>
+
+                    </a>
+                </li>
+                <li class="lower">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-github" aria-hidden="true"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

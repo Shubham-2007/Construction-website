@@ -1,0 +1,262 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+
+}
+/*-----------------------------Header part----------------------------------*/
+.header{
+  width: 100%;
+  padding-top: 20px;
+  /*height: 100vh;*/
+  /*background: linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.5)),url("1.jpg") center no-repeat;*/
+  /**/
+}
+.container{
+  max-width:100rem;
+  width:100%;
+  margin:0 auto;
+  
+
+}
+.navbar{
+  padding-top: 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  /*background-color: red;*/
+}
+.brand{
+  font-size: 3rem;
+  font-weight: 300;
+  transform: translateX(-100rem);
+  animation: slideIn .5s forwards; 
+
+}
+.brand span{
+  color:yellow;
+}
+
+nav ul{
+  display: flex;
+
+}
+nav ul li{
+  list-style: none;
+  transform: translateX(100rem);
+  animation: slideIn .5s forwards;
+}
+nav ul li:nth-child(1){
+  animation-delay: 0s;
+}
+nav ul li:nth-child(2){
+  animation-delay: .5s;
+}
+nav ul li:nth-child(3){
+  animation-delay: 1s;
+}
+nav ul li:nth-child(4){
+  animation-delay: 1.5s;
+}
+nav ul li:nth-child(5){
+  animation-delay: 2s;
+} 
+nav ul li a{
+  padding: 1rem 0;
+  margin: 0 3rem;
+  position: relative;
+  letter-spacing: 2px;
+}
+nav ul li a:last-child{
+  margin-right: 0;
+
+}
+nav ul li a::before,
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: yellow;
+  left: 0;
+  transform: scaleX(0);
+  transition: all .5s;
+}
+nav ul li a::before{
+  top: 0;
+  transform-origin: left;
+
+}
+nav ul li a::after{
+  bottom: 0;
+  transform-origin: right;
+  
+}
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+  transform: scaleX(1);
+  
+}
+a{
+  text-decoration: none;
+  color: #eee;
+}
+@keyframes slideIn{
+  from{
+
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+.background{
+    background: linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.5)),url("77.jpg") center no-repeat;
+    /*background-image: url("1.jpg");*/
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    height: 900px; 
+}
+.main1{
+    background-size: cover;
+    position: relative;
+    background-position: center;
+   height: 400px; 
+   background-color: #dfdfdf;
+}
+
+.center1{
+  width:100%;
+  position : absolute;
+  color:white;
+  text-align: center;
+  margin-top:1px;
+  
+}
+
+.center{
+  width:100%;
+  position : absolute;
+  color: #fff;
+  text-align: center;
+  margin-top:25%;
+  
+}
+
+.hr1 {
+  border: 1.5px solid yellow;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+
+.ml5 {
+  position: relative;
+  font-weight: 900;
+  letter-spacing: 2px;
+  
+  }
+  
+  .ml5 .text-wrapper1 {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  overflow: hidden;
+  }
+  
+  .ml5 .letter1 {
+  display: inline-block;
+  line-height: 1em;
+  font-size: 100px;
+  letter-spacing: 1px;
+  }
+ 
+.ml6 {
+  position: relative;
+  font-weight: 900;
+
+  }
+  
+  .ml6 .text-wrapper2 {
+  position: relative;
+  display: inline-block;
+  
+  overflow: hidden;
+  }
+  
+  .ml6 .letter2 {
+  display: inline-block;
+  line-height: 1em;
+  font-size: 27px;
+  }
+  /*--------------photo gallery-------------------------*/
+  .residents{
+  width: 1280px;
+  min-height: 500px;
+  /*background:#fff;*/
+  
+  margin:70px auto 0;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.residents .box{
+  position: relative;
+  width:400px;
+  height: 300px;
+  background:#ff0;
+  margin:10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.residents .box .imgbox{
+  position: relative;
+  overflow: hidden;
+}
+.residents .box .imgbox img{
+  max-width: 100%;
+  transition: transform 2s;
+}
+.residents .box:hover .imgbox img{
+  transform: scale(1.2);
+}
+.residents .box .details{
+  position: absolute;
+  top: 10px;
+  left:10px;
+  bottom: 10px;
+  right: 10px;
+  //background:rgba(0,0,0.8);
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+.residents .box:hover .details{
+  transform: scaleY(1);
+}
+.residents .box .details .contents{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding:15px;
+  color:#fff;
+}
+.residents .box .details .contents h2{
+  margin: 0;
+  padding: 0;
+  font-size: :20px;
+  color:#ff0;
+}
+.residents .box .details .contents p{
+  margin:10px 0 0;
+  padding:0;
+  font-weight: bold;
+  color:white;
+}
+
+
